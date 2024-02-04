@@ -1,0 +1,39 @@
+{
+  "private": true,
+  "name": "@btakita/build",
+  "version": "0.0.1",
+  "description": " utility build functions ",
+  "type": "module",
+  "main": "./index.ts",
+  "module": "./index.ts",
+  "types": "./index.ts",
+  "scripts": {
+    "build": ":",
+    "clean": ":",
+    "test": "bun test-unit && check-dts",
+    "test-unit": "tsm node_modules/uvu/bin.js . '\\.test\\.(ts|js)$'",
+    "test-unit-coverage": "c8 bun test-unit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/btakita/brookebrodack-dev.git"
+  },
+  "keywords": [
+    "ctx-core",
+    "auth"
+  ],
+  "author": "Brian Takita",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/btakita/brookebrodack-dev/issues"
+  },
+  "homepage": "https://bb.briantakita.me",
+  "dependencies": {
+    "terser": "^5.27.0"
+  },
+  "devDependencies": {
+    "ctx-core": "^5.38.0",
+    "rmemo": "^0.42.0"
+  },
+  "sideEffects": false
+}
